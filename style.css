@@ -110,8 +110,7 @@ justify-content: center;
     display: inline-block;
     font-size: 20px;
 }
-.telaSprint2 {
-}
+
 .sprint1 {
     height: 100%;
     display: flex;
@@ -204,6 +203,10 @@ section p{
 
 @media screen and (max-width: 1110px) {
     .inicioDis{
+        display: none;
+    }
+    
+    .auto-btn1, .manual-btn, .auto-btn2 {
         display: none;
     }
     
