@@ -29,7 +29,6 @@ function telona(){
     body.style.display = "none"
     telaSprint1.style.display = "inherit"
     telaSprint2.style.display = "none"
-    window.location.href = '#sprint1'
 
 
 }
@@ -38,7 +37,6 @@ function telona2(){
     body.style.display = "none"
     telaSprint1.style.display = "none"
     telaSprint2.style.display = "inherit"
-    window.location.href = '#sprint2'
 
 
 }
