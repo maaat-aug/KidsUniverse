@@ -7,6 +7,7 @@ document.getElementById("telaSprint1");
 document.getElementById("telaSprint2");
 document.getElementById("body")
 document.getElementById('sprint')
+document.getElementById('sprint1')
 
 
 setInterval(() => {
@@ -28,6 +29,8 @@ function telona(){
     body.style.display = "none"
     telaSprint1.style.display = "inherit"
     telaSprint2.style.display = "none"
+    window.location.href = '#sprint1'
+
 
 }
 function telona2(){
@@ -35,6 +38,8 @@ function telona2(){
     body.style.display = "none"
     telaSprint1.style.display = "none"
     telaSprint2.style.display = "inherit"
+    window.location.href = '#sprint2'
+
 
 }
 function voltarPagInicial() {
