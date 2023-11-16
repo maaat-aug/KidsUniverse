@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/6dda5f6271.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="slide.css"/>
+    <script src="slide.js" defer></script>
+    <title>Slider - Inteliogia</title>
+  </head>
+  <body>
+    <div id="body" class="pagInteira" style="display: inherit">
+      <header>
+        <div class="container">
+          <div class="logo"><img src="img/logo.png"/></div>
+          <div class="menu">
+            <nav>
+              <a href="#inicio">Inicio</a>
+              <a href="#equipe">Equipe</a>
+              <a href="#sprint">Sprints/Contato</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="slider" id="inicio">
+        <div class="slider-content">
+          <input type="radio" name="btn-radio" id="radio1"/>
+          <input type="radio" name="btn-radio" id="radio2"/>
+          <input type="radio" name="btn-radio" id="radio3"/>
+
+          <div class="slide-box primeiro">
+            <img class="img-desktop" src="img/slide-1.jpg" alt="slide 1"/>
+            <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1"/>
+          </div>
+
+          <div class="slide-box">
+            <img class="img-desktop" src="img/slide-2.jpg" alt="slide 3"/>
+            <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1"/>
+          </div>
+
+          <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+          </div>
+
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+          </div>
+        </div>
+      </section>
+
+      <section id="home">
+        <div class="container1">
+          <h2>Nosso projeto:</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa
+            et ad, itaque ipsum impedit ducimus vero fugit amet earum deserunt
+            omnis possimus minima ipsam quia est quaerat illo quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            repudiandae corporis possimus veritatis fugiat facilis nihil
+            sapiente facere delectus ex vel voluptatibus cumque recusandae
+            quaerat dignissimos. Illum, exercitationem recusandae? Cum. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+            molestias sapiente qui odio aspernatur vitae dolores ab optio
+            accusamus sint pariatur, maxime facere ullam eveniet, reiciendis
+            dolore quia rerum architecto.
+          </p>
+        </div>
+      </section>
+
+      <section id="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="containerimg">
+          <img src="img/dario.png" alt=""/>
+          <img src="img/enzo.png" alt=""/>
+          <img src="img/matheus.png" alt=""/>
+          <img src="img/roberta.png" alt=""/>
+          <img src="img/JaoVictor.png" alt=""/>
+          <img src="img/Victor.png" alt=""/>
+          <img src="img/vinicius.png" alt=""/>
+        </div>
+      </section>
+
+      <section id="sprint">
+        <div class="container1">
+          <h2>Sprints</h2>
+          <button onclick="telona()" style="margin-right: 25px">
+            Sprint 1
+          </button>
+          <button onclick="telona2()" style="margin-right: 25px">
+            Sprint 2
+          </button>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="container1">
+          <h2>Contato</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa
+            et ad, itaque ipsum impedit ducimus vero fugit amet earum deserunt
+            omnis possimus minima ipsam quia est quaerat illo quidem.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            repudiandae corporis possimus veritatis fugiat facilis nihil
+            sapiente facere delectus ex vel voluptatibus cumque recusandae
+            quaerat dignissimos. Illum, exercitationem recusandae? Cum. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+            molestias sapiente qui odio aspernatur vitae dolores ab optio
+            accusamus sint pariatur, maxime facere ullam eveniet, reiciendis
+            dolore quia rerum architecto.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="telaSprint1" id="telaSprint1" style="display: none">
+      <div class="sprint1">
+        <div class="screenSprint">
+          <h1 style="text-align: center">Sprint 1 <div class="x"> <button onclick="voltarPagInicial()"><i class="fa-solid fa-x"></i></button></div></h1>
+
+           
+          <h3>
+            Data de início: <br/>
+            <span>07/08/2023</span>
+          </h3>
+
+
+
+          <h3>
+           <h2>Scrum Master</h2>
+            <span>Dário Oliveira da Silva Neto</span>
+          </h3>
+
+
+
+          <h3>
+            <h2>Apoiadores:</h2>
+            <span>Humberto Melo (Orientador)</span>
+          </h3>
+
+
+          <h3>
+            <h2>Atividades:</h2>
+            {}
+          </h3>
+         
+
+
+          <h3>
+            <h2>Data de término:</h2>
+            <span>28/08/2023</span>
+          </h3>
+
+
+
+          <h3>
+            <h2> Pontos positivos:</h2>
+            <span>{}</span>
+          </h3>
+
+
+          <h3>
+            <h2>Melhorias:</h2>
+            <span>{}</span>
+          </h3>
+
+
+          <h3>
+            <h2>Conclusão:</h2>
+            <span>
+              Na conclusão desta Sprint, a equipe Kidplay Universe entregou com
+              sucesso um trabalho excepcional, superando as expectativas. A
+              colaboração e harmonia entre os membros foram notáveis, resultando
+              em eficiência e qualidade. Não houve problemas significativos,
+              refletindo o sucesso das estratégias de gerenciamento. Esta sprint
+              atingiu e superou metas, destacando a importância da criatividade,
+              cooperação e comprometimento.
+            </span>
+          </h3>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="telaSprint2" id="telaSprint2" style="display: none">
+        <div class="sprint1">
+          <div class="screenSprint">
+            <h1 style="text-align: center">Sprint 2 <div class="x"> <button onclick="voltarPagInicial()"><i class="fa-solid fa-x"></i></button></div></h1>
+  
+             
+            <h3>
+             <h2> Data de início: </h2>
+              <span>29/08/2023</span>
+            </h3>
+  
+  
+  
+            <h3>
+             <h2>Scrum Master</h2>
+              <span>Matheus Augusto Teixeira Silva</span>
+            </h3>
+  
+  
+  
+            <h3>
+              <h2>Apoiadores:</h2>
+              <span>Humberto Melo (Orientador)</span>
+            </h3>
+  
+  
+            <h3>
+              <h2>Atividades:</h2>
+              - Desenvolvimento do Site; <br>
+              - Desenvolvimento do Jogo; <br>
+              - Criação do registro formal no formato OverLeaf. <br>
+            </h3>
+           
+  
+  
+            <h3>
+              <h2>Data de término:</h2>
+              <span>04/10/2023</span>
+            </h3>
+  
+  
+  
+            <h3>
+              <h2> Pontos positivos:</h2>
+              <span>{}</span>
+            </h3>
+  
+  
+            <h3>
+              <h2>Melhorias:</h2>
+              <span>{}</span>
+            </h3>
+  
+  
+            <h3>
+              <h2>Conclusão:</h2>
+              <span>
+                Ao encerrar esta Sprint, a equipe Kidplay Universe alcançou um desempenho excepcional, superando as expectativas estabelecidas. A notável sinergia e cooperação entre os membros resultaram em eficiência e excelência no trabalho entregue. Não foram identificados problemas significativos, o que reflete o êxito das estratégias de gerenciamento adotadas. Além disso, a Sprint atingiu e até mesmo ultrapassou suas metas, destacando a importância da criatividade, cooperação e dedicação no processo.
+              </span>
+            </h3>
+  
+  
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

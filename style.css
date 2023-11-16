@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.container1{ 
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    padding: 15px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo{
+    width: 100%;}
+
+.logo img{
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.menu{
+    width: 100%;
+}
+
+.menu nav a{
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg , #FF2500, #FF7100);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.menu nav a:ho111ver{
+    color: #ffffff;
+}
+
+
+/* estilização do conteúdo */
+#equipe img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+
+}
+
+#equipe .containerimg {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#sprint {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#sprint button {
+    margin-top: 70px;
+    background-color: #04AA6D;
+    border-radius: 35px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.telaSprint2 {
+    border:  1px solid red;
+}
+.sprint1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.screenSprint {
+    padding: 15px;
+    border: 3px solid cyan;
+    border-radius: 35px;
+    height: 100%;
+    width: 70vw;
+    
+}
+
+.x {
+    display: flex;
+    justify-content: right;
+}
+.x button {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    color: red;
+    border: 3px solid red;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.x button:hover {
+    background-color: red;
+    color: white;
+}
+.screenSprint h2 {
+    font-size: 22px;
+}
+section{
+    padding: 90px 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+#menu-mobile{
+    background-color: #1111119f;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 77px;
+    right: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#menu-mobile nav a{
+    display: block;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#menu-mobile nav a:hover{
+    background-color: #383838;
+}
+
+#btn-menu,
+#btn-menu-close{
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1110px) {
+    .menu,
+    .social{
+        display: none;
+    }
+
+    #equipe .containerimg {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #btn-menu,
+    #menu-mobile{
+        display: block;
+    }
+
+    #menu-mobile.active{
+        height: calc(100vh - 77px);
+        visibility: visible;
+    }
+}
