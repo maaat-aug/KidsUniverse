@@ -6,6 +6,7 @@ document.getElementById('radio1').checked = true
 document.getElementById("telaSprint1");
 document.getElementById("telaSprint2");
 document.getElementById("body")
+document.getElementById('sprint')
 
 
 setInterval(() => {
@@ -40,5 +41,7 @@ function voltarPagInicial() {
     body.style.display = "inherit"
     telaSprint1.style.display = "none"
     telaSprint2.style.display = "none"
+    window.location.href = '#sprint'
+
 
 }
