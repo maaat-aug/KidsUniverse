@@ -7,7 +7,6 @@ document.getElementById("telaSprint1");
 document.getElementById("telaSprint2");
 document.getElementById("body")
 document.getElementById('sprint')
-document.getElementById('sprint1')
 
 
 setInterval(() => {
