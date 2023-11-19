@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="slide.css"/>
-    <script src="slide.js" defer></script>
+    <script src="script.js" defer></script>
     <title>KidsUniverse</title>
   </head>
   <body>
@@ -21,9 +21,8 @@
           <div class="logo"><img src="img/logo.png"/></div>
           <div class="menu">
             <nav>
-              <a href="#inicio">Inicio</a>
-                  <a class="inicioDis" href="#equipe">Equipe</a>
-                  <a href="#sprint">Sprints</a>
+              <a href="#inicio" onclick="voltarPagina()">Inicio</a>
+                  <a href="#sprint" onclick="voltarPagina()">Sprints</a>
             </nav>
           </div>
         </div>
@@ -56,28 +55,19 @@
           </div>
         </div>
       </section>
-
+      
       <section id="home">
         <div class="container1">
-          <h2>Nosso projeto:</h2>
+          <h2>Quem somos nós?</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa
-            et ad, itaque ipsum impedit ducimus vero fugit amet earum deserunt
-            omnis possimus minima ipsam quia est quaerat illo quidem.
+            Somos uma iniciativa apaixonada por educação e tecnologia, criada em 2023 através do Projeto Integrador do professor Humberto Gustavo de Melo, com o principal propósito de tornar o aprendizado uma experiência divertida e interativa para todos os alunos.
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-            repudiandae corporis possimus veritatis fugiat facilis nihil
-            sapiente facere delectus ex vel voluptatibus cumque recusandae
-            quaerat dignissimos. Illum, exercitationem recusandae? Cum. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-            molestias sapiente qui odio aspernatur vitae dolores ab optio
-            accusamus sint pariatur, maxime facere ullam eveniet, reiciendis
-            dolore quia rerum architecto.
+            Nosso objetivo é redefinir o paradigma educacional, proporcionando uma experiência inovadora e envolvente por meio do Desafio de Aprendizagem Interativa. Buscamos inspirar a paixão pelo conhecimento, transformando o aprendizado em uma jornada divertida e acessível para todos.
           </p>
         </div>
       </section>
-
+      
       <section id="equipe">
         <h2>Nossa Equipe</h2>
         <div class="containerimg">
@@ -91,6 +81,20 @@
         </div>
       </section>
 
+      <section id="contato">
+        <div class="container1">
+          <h2>Nosso Jogo</h2>
+          <br>
+          <img src="" alt="fotoFase1 WIP"><br>
+          <img src="" alt="fotoFase2 WIP"><br>
+          <img src="" alt="fotoFase3 WIP">
+          <p>
+            <h2>Gostou? Quer jogar?</h2>
+            <h2><button class="btnDivul"><a href="">Embarque nessa aventura!</a> </button></h2>
+          </p>
+        </div>
+      </section>
+      
       <section id="sprint">
         <div class="container1">
           <h2>Sprints</h2>
@@ -103,40 +107,19 @@
         </div>
       </section>
 
-      <section id="contato">
-        <div class="container1">
-          <h2>Contato</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa
-            et ad, itaque ipsum impedit ducimus vero fugit amet earum deserunt
-            omnis possimus minima ipsam quia est quaerat illo quidem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-            repudiandae corporis possimus veritatis fugiat facilis nihil
-            sapiente facere delectus ex vel voluptatibus cumque recusandae
-            quaerat dignissimos. Illum, exercitationem recusandae? Cum. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-            molestias sapiente qui odio aspernatur vitae dolores ab optio
-            accusamus sint pariatur, maxime facere ullam eveniet, reiciendis
-            dolore quia rerum architecto.
-          </p>
-        </div>
-      </section>
+
     </div>
 
-    <div class="telaSprint1" id="telaSprint1" style="display: none">
+    <div class="telaSprint1" id="telaSprint1" style="display: none"> 
       <div class="sprint1">
         <div class="screenSprint">
           <h1 style="text-align: center">Sprint 1 <div class="x"> <button onclick="voltarPagInicial()"><i class="fa-solid fa-x"></i></button></div></h1>
 
-           
           <h3>
-            Data de início: <br/>
-            <span>07/08/2023</span>
-          </h3>
-
-
+            <h2> Data de início: </h2>
+             <span>07/08/2023</span>
+           </h3>
+        
 
           <h3>
            <h2>Scrum Master</h2>
@@ -153,7 +136,9 @@
 
           <h3>
             <h2>Atividades:</h2>
-            {}
+            - Criação da logo; <br>
+            - Criação do nome do jogo e da empresa; <br>
+            - Desenvolvimento de um protótipo de baixa fidelidade. <br>
           </h3>
          
 
@@ -167,13 +152,19 @@
 
           <h3>
             <h2> Pontos positivos:</h2>
-            <span>{}</span>
+            <span>
+              - Idealização sólida do projeto; <br>
+              - Intersocialização dos membros; <br>
+              - Reconhecimentos de limites por parte dos membros.
+            </span>
           </h3>
 
 
           <h3>
             <h2>Melhorias:</h2>
-            <span>{}</span>
+            <span>                
+              - Melhor divisão de trabalho; <br>
+              - Melhor atribuição de membros.</span>
           </h3>
 
 
@@ -239,13 +230,17 @@
   
             <h3>
               <h2> Pontos positivos:</h2>
-              <span>{}</span>
+              <span>
+                - Engajamento entre os membros; <br>
+                - Criação da base do projeto.
+              </span>
             </h3>
-  
   
             <h3>
               <h2>Melhorias:</h2>
-              <span>{}</span>
+              <span>
+                - Melhor divisão de trabalho; <br>
+                - Melhor atribuição de membros.</span>
             </h3>
   
   
