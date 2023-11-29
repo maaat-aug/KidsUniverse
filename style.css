@@ -248,6 +248,10 @@ section p{
         display: none;
     }
     
+    .fotosJogo img {
+        height: 350px;
+        width: 350px;
+    }
     #equipe .containerimg {
         display: flex;
         width: 100%;
