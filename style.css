@@ -55,6 +55,22 @@ header{
     position: relative;
 }
 
+.fotosJogo img {
+    height: 500px;
+    width: 500px;
+}
+
+.fotosJogo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.textoJogo {
+    margin-top: 100px;
+}
 .menu nav a::after{
     content: " ";
     width: 0px;
